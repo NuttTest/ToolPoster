@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine30 Consulting - Client-Side Tool Methodology</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            padding: 30px;
+            background: linear-gradient(135deg, #0a2e5c 0%, #003366 100%);
+            color: white;
+            position: relative;
+        }
+        
+        .logo {
+            width: 180px;
+            margin-bottom: 15px;
+            background-color: white;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: white;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #88c540;
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: #88c540;
+            margin-bottom: 15px;
+        }
+        
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+            padding: 30px;
+        }
+        
+        .methodology-section {
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #88c540;
+            height: 100%;
+            position: relative;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            background-color: #88c540;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .methodology-list {
+            list-style-type: none;
+        }
+        
+        .methodology-list li {
+            margin-bottom: 12px;
+            padding-left: 15px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .methodology-list li::before {
+            content: "•";
+            color: #88c540;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .core-values {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px 30px;
+        }
+        
+        .value-item {
+            flex: 1;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            color: white;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .value-item h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .value-item p {
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+            line-height: 1.4;
+        }
+        
+        .value-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(136, 197, 64, 0.9) 0%, rgba(0, 51, 102, 0.8) 100%);
+            z-index: -1;
+        }
+        
+        .value-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #003366;
+            border-top: 1px solid #eee;
+        }
+        
+        .footer a {
+            color: #88c540;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .methodology-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .core-values {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://nine30consulting.com/wp-content/uploads/2021/04/nine30-logo.png" alt="NINE30 CONSULTING" class="logo">
+            <h1>Client-Side Tool Development Methodology</h1>
+            <p class="tagline">Tools that work the way people do.</p>
+        </header>
+        
+        <div class="methodology-grid">
+            <div class="methodology-section">
+                <div class="section-title">
+                    <div class="section-icon">1</div>
+                    Discover & Define
+                </div>
+                <ul class="methodology-list">
+                    <li>Uncover underlying needs and opportunities beyond stated requirements</li>
+                    <li>Prioritize features that deliver immediate value and measurable impact</li>
+                    <li>Create intuitive interfaces that minimize learning curves</li>
+                    <li>Account for real-world workplace constraints in design solutions</li>
+                    <li>Validate concepts early to ensure alignment with actual needs</li>
+                </ul>
+            </div>
+            
+            <div class="methodology-section">
+                <div class="section-title">
+                    <div class="section-icon">2</div>
+                    Build & Refine
+                </div>
+                <ul class="methodology-list">
+                    <li>Deliver robust solutions that perform reliably in diverse environments</li>
+                    <li>Ensure seamless data handling that maintains integrity at all times</li>
+                    <li>Create resilient systems that gracefully handle real-world conditions</li>
+                    <li>Incorporate continuous feedback to refine and perfect functionality</li>
+                    <li>Address unique technical considerations for government environments</li>
+                </ul>
+            </div>
+            
+            <div class="methodology-section">
+                <div class="section-title">
+                    <div class="section-icon">3</div>
+                    Launch & Maximize
+                </div>
+                <ul class="methodology-list">
+                    <li>Create champions who drive adoption through genuine enthusiasm</li>
+                    <li>Introduce capabilities strategically to ensure successful adoption</li>
+                    <li>Focus first on solutions that deliver immediate, visible wins</li>
+                    <li>Integrate testing seamlessly into existing work patterns</li>
+                    <li>Build confidence through transparent communication and support</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="core-values">
+            <div class="value-item">
+                <h3>Collaborate</h3>
+                <p>We work side-by-side with teams to understand real needs. By bringing everyone to the table, we create tools that people actually want to use, not just tools that check technical boxes.</p>
+            </div>
+            
+            <div class="value-item">
+                <h3>Innovate</h3>
+                <p>We find the sweet spot between familiar and forward-thinking. Our tools introduce new capabilities in ways that feel natural, making the complex simple and the powerful accessible.</p>
+            </div>
+            
+            <div class="value-item">
+                <h3>Elevate</h3>
+                <p>When technology gets out of the way, people shine. Our tools remove the friction from everyday tasks so teams can focus on what matters most—solving problems and driving organizational goals forward.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Nine30 Consulting © 2025 | <a href="https://nine30consulting.com">www.nine30consulting.com</a> | We build the tools organizations need to do their best work
+        </div>
+    </div>
+</body>
+</html>
